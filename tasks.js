@@ -40,10 +40,18 @@ function onDataReceived(text) {
   else if(text === 'hello\n'){
     hello();
   }
+  else if(text === 'help\n'){
+    help();
+  }
   else{
     unknownCommand(text);
   }
 }
+
+
+
+
+
 
 
 /**
@@ -78,5 +86,15 @@ function quit(){
   process.exit();
 }
 
+function help1(){
+  console.log("Type 'help' for any issues or missing commands!");
+}
+
+function help(){
+  console.log('Type "Hello" to Say Hello! \nType "exit" or "quit" to say goodbye and exit!');
+ 
+}
+
 // The following line starts the application
 startApp("Antoine haddad");
+help1();
