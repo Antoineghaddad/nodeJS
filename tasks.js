@@ -46,7 +46,13 @@ function onDataReceived(text) {
     hello(text[1]);
   }
 
-  
+  else if(text[0] === "output" ) {
+     added(text[1]);
+  }
+  else if(text[0] === "add"){
+    push(text[1]);
+  }
+
   else if(text[0] === 'help'){
     help();
   }
@@ -87,12 +93,28 @@ function hello(arg){
   }
   
 }
+var NewList = [];
+
+function added(){
+  console.log(NewList);
+}
+
+
+function push(item1){
+
+    NewList.push(item1);
+  
+ 
+}
+
 
 /**
  * Exits the application
  *
  * @returns {void}
  */
+
+
 function quit(){
   console.log('Quitting now, goodbye!')
   process.exit();
