@@ -142,8 +142,10 @@ function help1(){
 }
 
 function help(){
-  console.log('Type "Hello" to Say Hello! \nType "exit" or "quit" to say goodbye and exit!' +'\n'+ 
-  'type hello + name to get hello name!');
+  console.log('Type \'Hello\' to Say Hello! \nType \'exit\' or \'quit\' to say goodbye and exit!' +'\n'+ 
+  'Type hello + name to get hello name! \nType \'add\' to add an element to the list' + 
+  "\n" + "Type 'Remove 1' to remove the first element \nType 'Remove 2' to remove the second element" +
+  "\n" + "Type 'Remove' to delete the last element");
  
 }
 
