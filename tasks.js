@@ -35,6 +35,7 @@ function startApp(name){
  */
 
 function onDataReceived(text) {
+  text = text.replace("\n" , " ");
   text = text.trim(" ");
   text = text.split(" ");
 
