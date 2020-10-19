@@ -52,7 +52,11 @@ function onDataReceived(text) {
   else if(text[0] === "add"){
     push(text[1]);
   }
-
+  else if(text[0] === "remove"){
+    text.shift();
+    remove(text);
+  }
+  
   else if(text[0] === 'help'){
     help();
   }
@@ -106,6 +110,19 @@ function push(item1){
   
  
 }
+
+function remove(item1){
+  if(item1 == "") {
+    NewList.splice(NewList.length-1,1);
+  }
+  else if(item1 <=0 || item1 > NewList.length){
+      console.log("error ! number doesn't exist")
+    }
+    else {
+      NewList.splice(item1 -1 ,1);
+  }
+  
+  }
 
 
 /**
