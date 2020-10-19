@@ -103,7 +103,8 @@ function help1(){
 }
 
 function help(){
-  console.log('Type "Hello" to Say Hello! \nType "exit" or "quit" to say goodbye and exit!');
+  console.log('Type "Hello" to Say Hello! \nType "exit" or "quit" to say goodbye and exit!' +'\n'+ 
+  'type hello + name to get hello name!');
  
 }
 
