@@ -56,6 +56,11 @@ function onDataReceived(text) {
     text.shift();
     remove(text);
   }
+  else if(text[0] === "edit"){
+    editt();
+    text.shift();
+    editt(text);
+  }
   
   else if(text[0] === 'help'){
     help();
@@ -122,6 +127,11 @@ function remove(item1){
       NewList.splice(item1 -1 ,1);
   }
   
+  }
+  function editt(arg){
+    
+    if(arg == null){
+      console.log("Error! Unknown Command!")
   }
 
 
